@@ -1,8 +1,7 @@
-
 name: Build AntiGem Standard APK
 
-
-  on: [workflow_dispatch]
+'on':
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -40,4 +39,3 @@ jobs:
           name: AntiGem-Standard-APK
           path: app/build/outputs/apk/standard/debug/*.apk
           if-no-files-found: error
-          
